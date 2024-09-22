@@ -33,7 +33,7 @@ resource "aws_instance" "example" {
     "cloud_provider" = "aws"
   }
 
-  user_data = <<-EOF
+  user_data = << EOF
               #!/bin/bash
               apt-get update
               apt-get install -y apache2
